@@ -1,0 +1,100 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/Liu/.nvm/v0.10.40/bin/node',
+1 verbose cli   '/Users/Liu/.nvm/v0.10.40/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.40
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/Liu/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/Liu/.npm/masking/1.0.5/package.tgz', '.' ]
+11 verbose tarball /Users/Liu/.npm/masking/1.0.5/package.tgz
+12 verbose folder .
+13 info prepublish masking@1.0.5
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/Liu/.npm/1f1177db-tar.lock
+16 silly lockFile d2783c3b-iu-npm-masking-1-0-5-package-tgz tar:///Users/Liu/.npm/masking/1.0.5/package.tgz
+17 verbose lock tar:///Users/Liu/.npm/masking/1.0.5/package.tgz /Users/Liu/.npm/d2783c3b-iu-npm-masking-1-0-5-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile d2783c3b-iu-npm-masking-1-0-5-package-tgz tar:///Users/Liu/.npm/masking/1.0.5/package.tgz
+21 silly lockFile d2783c3b-iu-npm-masking-1-0-5-package-tgz tar:///Users/Liu/.npm/masking/1.0.5/package.tgz
+22 silly lockFile 3cbd50c2-rs-Liu-npm-masking-1-0-5-package /Users/Liu/.npm/masking/1.0.5/package
+23 verbose lock /Users/Liu/.npm/masking/1.0.5/package /Users/Liu/.npm/3cbd50c2-rs-Liu-npm-masking-1-0-5-package.lock
+24 silly lockFile 3cbd50c2-rs-Liu-npm-masking-1-0-5-package /Users/Liu/.npm/masking/1.0.5/package
+25 silly lockFile 3cbd50c2-rs-Liu-npm-masking-1-0-5-package /Users/Liu/.npm/masking/1.0.5/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'masking',
+28 silly publish   version: '1.0.5',
+28 silly publish   description: 'Feather masking for canvas',
+28 silly publish   main: './js/Mask.js',
+28 silly publish   scripts: { start: 'watchify -v -t babelify ./js/index.js -o ./dist/bundle.js' },
+28 silly publish   author: { name: 'Gar Liu' },
+28 silly publish   license: 'ISC',
+28 silly publish   devDependencies:
+28 silly publish    { 'babel-preset-es2015': '^6.3.13',
+28 silly publish      'babel-preset-stage-0': '^6.3.13',
+28 silly publish      babelify: '^7.2.0',
+28 silly publish      browserify: '^13.0.0',
+28 silly publish      watchify: '^3.7.0' },
+28 silly publish   readme: 'ERROR: No README data found!',
+28 silly publish   _id: 'masking@1.0.5',
+28 silly publish   _shasum: 'fc4c38aa17ca03d99a10c9528f382695a9df0305',
+28 silly publish   _from: '.' }
+29 verbose request where is /masking
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id cc2d17ea4a442e16
+32 verbose url raw /masking
+33 verbose url resolving [ 'https://registry.npmjs.org/', './masking' ]
+34 verbose url resolved https://registry.npmjs.org/masking
+35 verbose request where is https://registry.npmjs.org/masking
+36 info trying registry request attempt 1 at 12:56:47
+37 http PUT https://registry.npmjs.org/masking
+38 http 403 https://registry.npmjs.org/masking
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=300',
+39 verbose headers   'content-length': '95',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Tue, 02 Feb 2016 17:56:49 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-dfw1829-DFW',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1454435807.988434,VS0,VE1134' }
+40 error publish Failed PUT 403
+41 error Error: "You cannot publish over the previously published version 1.0.5." : masking
+41 error     at RegClient.<anonymous> (/Users/Liu/.nvm/v0.10.40/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+41 error     at Request._callback (/Users/Liu/.nvm/v0.10.40/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+41 error     at Request.self.callback (/Users/Liu/.nvm/v0.10.40/lib/node_modules/npm/node_modules/request/request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/Users/Liu/.nvm/v0.10.40/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/Users/Liu/.nvm/v0.10.40/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:944:16
+41 error     at process._tickCallback (node.js:448:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Darwin 14.0.0
+44 error command "/Users/Liu/.nvm/v0.10.40/bin/node" "/Users/Liu/.nvm/v0.10.40/bin/npm" "publish"
+45 error cwd /Users/Liu/digitalocean/npm/masking
+46 error node -v v0.10.40
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+	<style>
+		img{
+			position: absolute;
+			z-index: -1;
+		}
+		body{
+			background-color: teal;
+		}
+		canvas{
+			/*position: absolute;*/
+			border: 1px dashed rgba(0,0,0,.1);
+		}
+
+		#maskFX img{
+			display: none;
+		}
+	</style>
+	
+</head>
+<body>
+	<!-- <img id="pic" src="http://lorempixel.com/600/600/"> -->
+	<div id="maskFX">
+		<canvas id="canvas"></canvas>	
+		<img src="http://lorempixel.com/500/600/">
+	</div>
+	
+	
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineMax.min.js"></script>
+<!-- <script src="./feather.js"></script> -->
+<script src="./bundle.js"></script>
+</html>

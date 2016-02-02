@@ -1,0 +1,24 @@
+{
+  "name": "masking",
+  "version": "1.0.6",
+  "description": "Feather masking for canvas",
+  "main": "./js/Mask.js",
+  "scripts": {    
+    "start": "watchify -v -t babelify ./js/index.js -o ./dist/bundle.js"
+  },
+  "author": {
+    "name": "Gar Liu"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "watchify": "^3.7.0"
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "masking@1.0.3",
+  "_shasum": "ba7a8f7d01409707da42432c1ead54e6787fe279",
+  "_from": "masking@"
+}
